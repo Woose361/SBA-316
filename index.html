@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src = "https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <title>Mood Tracker</title>
+</head>
+<body>
+   <h1>Mood Tracker</h1>
+    <form id ="mood-form">
+        <label for="text" id="mood-input"></label>
+        <input type="text" id="mood-input" placeholder="How are you feeling?" required> 
+<br>
+
+        <label for="note-input">Note:</label>
+        <input type="text">Log Mood</button>
+<br>
+        <button type="submit">Submit</button>
+
+     </form>
+     <div id = "mood-list"></div>
+
+     <div id = "quote-container"></div>
+
+     <button id = "check-location">Check Location</button>
+
+     <div id = "location-info"></div>
+
+     <button id = "history-back">Go Back</button>
+     <canvas id = "mood-chart" width ="400" height ="200"></canvas>
+     <audio id = "background-music" src = "https://www.bensound.com/bensound-music/bensound-tenderness.mp3" loop></audio>  
+     
+    <script src="index.js"></script>
+</body>
+</html>
